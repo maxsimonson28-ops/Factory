@@ -23,10 +23,26 @@ public class Factory {
         isOpen = false;
         earnings = 4.1;
         products = "houses";
+        int x;
+        factoryInfo();
+        yearFounded=1274;
         factoryInfo();
 
-        //change the value of the year founded and isOpen
-        //call factoryInfo
+
+        //object of type house
+        House h1 = new House();
+        h1.owner = "Mr.Kim";
+        System.out.println("The owner is " + h1.owner);
+
+        h1.address = "41 Barbershop road";
+        h1.isOccupied = true;
+        h1.size = 50.67;
+        h1.walls = 4;
+        System.out.println("The address is " + h1.address);
+        System.out.println("The size is " + h1.size);
+        System.out.println("It has " + h1.walls + " walls");
+
+
     }
 
     public void factoryInfo(){
@@ -36,7 +52,7 @@ public class Factory {
         System.out.println("the year founded:");
         System.out.println(yearFounded);
         System.out.println("the earnings:" + earnings);
-        System.out.println("it is" + isOpen + "that the factory is open");
+        System.out.println("it is " + isOpen + " that the factory is open");
 
     }
 }
