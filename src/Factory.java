@@ -43,6 +43,20 @@ public class Factory {
         System.out.println("It has " + h1.walls + " walls");
 
 
+        House h2 = new House();
+        System.out.println(h2.size);
+        h2.size = 40.2;
+        System.out.println(h2.size);
+        h2.printInfo();
+
+        House myHouse = new House();
+        myHouse.printInfo();
+
+
+        House customHouse = new House(200.24,8,"Max","153 centre st",true);
+        customHouse.printInfo();
+
+
     }
 
     public void factoryInfo(){
