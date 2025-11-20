@@ -56,6 +56,21 @@ public class Factory {
         House customHouse = new House(200.24,8,"Max","153 centre st",true);
         customHouse.printInfo();
 
+        Farm f1 = new Farm();
+        f1.name = "the Best Farm";
+        System.out.println("The name of the farm is " + f1.name);
+        f1.acres = 100;
+        System.out.println("The farm has " + f1.acres + " acres");
+        f1.moneyMaking = true;
+        System.out.println("It is "+ f1.moneyMaking + " that the farm makes money");
+
+
+        Farm myFarm = new Farm(100, "Farm", true);
+        myFarm. printInfo();
+
+
+
+
 
     }
 
@@ -69,6 +84,11 @@ public class Factory {
         System.out.println("it is " + isOpen + " that the factory is open");
 
     }
+
+
+
+
+
 }
 
 
