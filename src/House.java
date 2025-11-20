@@ -22,6 +22,10 @@ public class House {
         address = pAddress;
         isOccupied = pIsOccupied;
 
+
+
+
+
     }
 
 
